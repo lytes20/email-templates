@@ -150,73 +150,6 @@
       .social-media-icon-image {
         width: 100%;
       }
-      .action-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        border: 1px solid #ededed;
-        border-radius: 4px;
-        padding: 1.5rem;
-        gap: 1rem;
-        background: white;
-      }
-      .action-title {
-        font-family: Proxima Nova, system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 21px;
-        margin: 0;
-        padding: 0;
-      }
-
-      .action-instructions {
-        font-family: Proxima Nova, system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        margin: 0;
-        padding: 0;
-      }
-
-      .continue-button {
-        display: inline-block;
-        font-weight: 400;
-        color: #5b626b;
-        text-align: center;
-        vertical-align: middle;
-        user-select: none;
-        background-color: transparent;
-        border: 1px solid transparent;
-        padding: 0.375rem 0.75rem;
-        font-size: 0.8125rem;
-        line-height: 1.5;
-        border-radius: 0.25rem;
-        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-          border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-        color: #fff;
-        background-color: #04c401;
-        border-color: #04c401;
-      }
-
-      .continue-button:visited {
-        color: #fff;
-      }
-
-      .continue-button:hover {
-        color: #fff;
-      }
-
-      .continue-button:active {
-        color: #fff;
-      }
-      .image-container img {
-        width: 100%;
-      }
     </style>
   </head>
   <body>
@@ -230,41 +163,30 @@
         </a>
       </div> -->
       <div class="main">
-        <div class="title">Complete Your Registration</div>
+        <div class="title">Registration Denied</div>
+        <br />
         <div class="green-line"></div>
         <br />
         <br />
         <br />
-        <p class="textBlock2">Dear {{name}}</p>
-        <br />
+        <p class="textBlock2">Dear {{name}},</p>
         <br />
         <p class="textBlock4">
-          Welcome to Ramani! Don't forget to pick up where you left off to start
-          placing orders on Ramani today.
+          We regret to inform you that your registration application to receive
+          financing from Ramani does not meet our eligibility criteria and has
+          been denied.
         </p>
         <br />
         <br />
-        <div class="action-div">
-          <div>
-            <div class="image-container">
-              <img
-                src="https://github.com/lytes20/email-templates/blob/master/images/get-started.png?raw=true"
-                alt="get started"
-              />
-            </div>
-          </div>
-          <div>
-            <p class="action-title">Upload KYC Documents</p>
-            <p class="action-instructions">
-              Upload your pending KYC documents within 48 hours to complete your
-              registration.
-            </p>
-          </div>
+        <p class="textBlock4">
+          Please visit our offices if you have any concerns.
+        </p>
+        <br />
+        <p class="textBlock4">Thank you.</p>
 
-          <div>
-            <a href="{{completion_link}}" class="continue-button">Continue</a>
-          </div>
-        </div>
+        <br />
+        <br />
+        <br />
         <br />
         <div class="divider"></div>
         <br />

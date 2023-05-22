@@ -150,37 +150,17 @@
       .social-media-icon-image {
         width: 100%;
       }
-      .action-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        border: 1px solid #ededed;
-        border-radius: 4px;
-        padding: 1.5rem;
-        gap: 1rem;
-        background: white;
-      }
-      .action-title {
-        font-family: Proxima Nova, system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 21px;
-        margin: 0;
-        padding: 0;
+
+      .continue-button:visited {
+        color: #fff;
       }
 
-      .action-instructions {
-        font-family: Proxima Nova, system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        margin: 0;
-        padding: 0;
+      .continue-button:hover {
+        color: #fff;
+      }
+
+      .continue-button:active {
+        color: #fff;
       }
 
       .continue-button {
@@ -202,21 +182,6 @@
         background-color: #04c401;
         border-color: #04c401;
       }
-
-      .continue-button:visited {
-        color: #fff;
-      }
-
-      .continue-button:hover {
-        color: #fff;
-      }
-
-      .continue-button:active {
-        color: #fff;
-      }
-      .image-container img {
-        width: 100%;
-      }
     </style>
   </head>
   <body>
@@ -230,41 +195,38 @@
         </a>
       </div> -->
       <div class="main">
-        <div class="title">Complete Your Registration</div>
+        <div class="title">Registration Successful! 🟢</div>
+        <br />
         <div class="green-line"></div>
         <br />
         <br />
         <br />
-        <p class="textBlock2">Dear {{name}}</p>
-        <br />
+        <p class="textBlock2">Dear {{name}},</p>
         <br />
         <p class="textBlock4">
-          Welcome to Ramani! Don't forget to pick up where you left off to start
-          placing orders on Ramani today.
+          Congratulations, your Ramani account has been opened and approved for
+          financing!
         </p>
         <br />
         <br />
-        <div class="action-div">
-          <div>
-            <div class="image-container">
-              <img
-                src="https://github.com/lytes20/email-templates/blob/master/images/get-started.png?raw=true"
-                alt="get started"
-              />
-            </div>
-          </div>
-          <div>
-            <p class="action-title">Upload KYC Documents</p>
-            <p class="action-instructions">
-              Upload your pending KYC documents within 48 hours to complete your
-              registration.
-            </p>
-          </div>
+        <p class="textBlock4">
+          You can start placing orders to your supplier now via the dashboard or
+          WhatsApp.
+        </p>
+        <br />
 
-          <div>
-            <a href="{{completion_link}}" class="continue-button">Continue</a>
-          </div>
+        <br />
+        <br />
+        <div>
+          <a
+            class="continue-button"
+            href="https://ramani.io/auth"
+            class="continue-button"
+            >Visit Dashboard</a
+          >
         </div>
+
+        <br />
         <br />
         <div class="divider"></div>
         <br />

@@ -203,17 +203,22 @@
         border-color: #04c401;
       }
 
-      .continue-button:visited {
+      a,
+      a:visited,
+      a:hover,
+      a:active {
         color: #fff;
       }
 
-      .continue-button:hover {
-        color: #fff;
-      }
-
+      .continue-button:visited,
+      .continue-button:hover,
       .continue-button:active {
         color: #fff;
       }
+      ol {
+        padding: 10px;
+      }
+
       .image-container img {
         width: 100%;
       }
@@ -230,7 +235,7 @@
         </a>
       </div> -->
       <div class="main">
-        <div class="title">Complete Your Registration</div>
+        <div class="title">Additional KYC Information Needed</div>
         <div class="green-line"></div>
         <br />
         <br />
@@ -239,8 +244,18 @@
         <br />
         <br />
         <p class="textBlock4">
-          Welcome to Ramani! Don't forget to pick up where you left off to start
-          placing orders on Ramani today.
+          Our team has reviewed your registration application and will need you
+          to resubmit the following documents:
+        </p>
+        <br />
+        <br />
+        <ol>
+          {{#each documentsToResubmit}}
+          <li class="textBlock4">{{this}}</li>
+          {{/each}}
+        </ol>
+        <p class="textBlock4">
+          Please click the link below to complete your registration today.
         </p>
         <br />
         <br />
@@ -262,7 +277,12 @@
           </div>
 
           <div>
-            <a href="{{completion_link}}" class="continue-button">Continue</a>
+            <a
+              className="continue-button"
+              href="{{completion_link}}"
+              class="continue-button"
+              >Continue</a
+            >
           </div>
         </div>
         <br />
