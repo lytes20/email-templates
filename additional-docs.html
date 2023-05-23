@@ -20,6 +20,9 @@
         font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto,
           "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       }
+      img {
+        width: 100%;
+      }
       .root {
         width: 80%;
         margin: 0 auto;
@@ -135,13 +138,7 @@
         border-bottom: solid 1px #8aa3b8;
       }
       .social-media-icons {
-        display: flex;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-        margin-bottom: 2rem;
+        margin: 0 auto;
       }
       .social-media-icon-container {
         width: 25px;
@@ -150,15 +147,11 @@
       .social-media-icon-image {
         width: 100%;
       }
-      .action-div {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      .action-table {
         width: 100%;
         border: 1px solid #ededed;
         border-radius: 4px;
         padding: 1.5rem;
-        gap: 1rem;
         background: white;
       }
       .action-title {
@@ -259,32 +252,34 @@
         </p>
         <br />
         <br />
-        <div class="action-div">
-          <div>
-            <div class="image-container">
-              <img
-                src="https://github.com/lytes20/email-templates/blob/master/images/get-started.png?raw=true"
-                alt="get started"
-              />
-            </div>
-          </div>
-          <div>
-            <p class="action-title">Upload KYC Documents</p>
-            <p class="action-instructions">
-              Upload your pending KYC documents within 48 hours to complete your
-              registration.
-            </p>
-          </div>
-
-          <div>
-            <a
-              className="continue-button"
-              href="{{completion_link}}"
-              class="continue-button"
-              >Continue</a
-            >
-          </div>
-        </div>
+        <table class="action-table">
+          <tr>
+            <td>
+              <div class="image-container">
+                <img
+                  src="https://github.com/lytes20/email-templates/blob/master/images/get-started.png?raw=true"
+                  alt="get started"
+                />
+              </div>
+            </td>
+            <td>
+              <div>
+                <p class="action-title">Upload KYC Documents</p>
+                <p class="action-instructions">
+                  Upload your pending KYC documents within 48 hours to complete
+                  your registration.
+                </p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <a href="{{completion_link}}" class="continue-button"
+                  >Continue</a
+                >
+              </div>
+            </td>
+          </tr>
+        </table>
         <br />
         <div class="divider"></div>
         <br />
@@ -302,70 +297,87 @@
       <div class="footer-section">
         <br />
         <br />
-        <!-- <p class="followUs">Follow us on</p>
+        <p class="followUs">Follow us on</p>
         <br />
-        <div class="social-media-icons">
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-media-icon-container"
-          >
-            <img
-              src="https://ramani-storage-bucket.s3.af-south-1.amazonaws.com/email_template_assets/icons/facebook.svg"
-              alt="facebook"
-              class="social-media-icon-image"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/ramani.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-media-icon-container"
-          >
-            <img
-              src="https://raw.githubusercontent.com/lytes20/email-templates/master/icons/instagram.svg"
-              alt="instagram"
-              class="social-media-icon-image"
-            />
-          </a>
-          <a
-            href="https://twitter.com/ramani_io"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-media-icon-container"
-          >
-            <img
-              src="https://ramani-storage-bucket.s3.af-south-1.amazonaws.com/email_template_assets/icons/twitter.svg"
-              alt="twitter"
-              class="social-media-icon-image"
-            />
-          </a>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-media-icon-container"
-          >
-            <img
-              src="https://ramani-storage-bucket.s3.af-south-1.amazonaws.com/email_template_assets/icons/youtube.svg"
-              alt="youtube"
-              class="social-media-icon-image"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/ramani-io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="social-media-icon-container"
-          >
-            <img
-              src="https://ramani-storage-bucket.s3.af-south-1.amazonaws.com/email_template_assets/icons/linkedin.svg"
-              alt="linkedIn"
-              class="social-media-icon-image"
-            />
-          </a>
-        </div> -->
+        <table class="social-media-icons">
+          <tr>
+            <!-- <td>
+              <div class="social-media-icon-container">
+                <a href="" target="_blank" rel="noopener noreferrer" class="">
+                  <img
+                    src="https://raw.githubusercontent.com/lytes20/email-templates/df4723e2956d9602c59ee025054a8fc378e32921/icons/facebook.svg"
+                    alt="facebook"
+                    class="social-media-icon-image"
+                  />
+                </a>
+              </div>
+            </td> -->
+            <td>
+              <div class="social-media-icon-container">
+                <a
+                  href="https://www.instagram.com/ramani.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-media-icon-container"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/lytes20/email-templates/df4723e2956d9602c59ee025054a8fc378e32921/icons/instagram.svg"
+                    alt="instagram"
+                    class="social-media-icon-image"
+                  />
+                </a>
+              </div>
+            </td>
+            <td>
+              <div class="social-media-icon-container">
+                <a
+                  href="https://twitter.com/ramani_io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-media-icon-container"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/lytes20/email-templates/df4723e2956d9602c59ee025054a8fc378e32921/icons/twitter.svg"
+                    alt="twitter"
+                    class="social-media-icon-image"
+                  />
+                </a>
+              </div>
+            </td>
+            <!-- <td>
+              <div class="social-media-icon-container">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-media-icon-container"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/lytes20/email-templates/df4723e2956d9602c59ee025054a8fc378e32921/icons/youtube.svg"
+                    alt="youtube"
+                    class="social-media-icon-image"
+                  />
+                </a>
+              </div>
+            </td> -->
+            <td>
+              <div class="social-media-icon-container">
+                <a
+                  href="https://www.linkedin.com/company/ramani-io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-media-icon-container"
+                >
+                  <img
+                    src="https://raw.githubusercontent.com/lytes20/email-templates/df4723e2956d9602c59ee025054a8fc378e32921/icons/linkedin.svg"
+                    alt="linkedIn"
+                    class="social-media-icon-image"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+        </table>
         <br />
         <a href="https://www.ramani.io/home" class="website" target="_blank"
           >www.ramani.io</a
